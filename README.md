@@ -56,4 +56,4 @@ Ensure that all plugins are installed and configured correctly using `:checkheal
 
 ## Important
 
-The configurations rely on pyright for auto-completion. If you find pyright delays in providing suggestion, then it is most likely that you have kept you python file in a place you have deep subdirectories i.e. home directory. To overcome this, you have to move your file in a directory having proper Python package directory structure. 
+The configurations rely on pyright for auto-completion. If you find pyright delays in providing suggestion, then it is most likely that you have kept you python file in a place you have deep subdirectories i.e. home directory. To overcome this, you have to move your file in a directory having proper Python package directory structure.
