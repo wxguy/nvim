@@ -1,6 +1,6 @@
 # Personal NeoVim Configuration using LazyVim
 
-My personal configuration aimed at Python development and writing documentation using `markdown`. It is built on top of the LazyVim distribution. I have not included many popular plugins to make it minimal and functional. Some of the configurations are added on top of good work done by others.
+My personal configuration aimed at Python development, bash scripting and writing markdown . It is built on top of the LazyVim distribution. I have not included many popular plugins to make it minimal and functional. Some of the configurations are added on top of good work done by others.
 
 To make use of the configuration, you should have the latest version of `neovim`. I have the following version at the time of writing this document:-
 
@@ -19,7 +19,7 @@ For better user experience I recommend using [neovide](https://github.com/neovid
 ## Install System Packages
 
 ```bash
-paru -Sy luarocks jedi-language-server pyright marksman ruff bashls tree-sitter nodejs git wl-clipboard python-pynvim 
+paru -Sy luarocks jedi-language-server pyright marksman ruff bash-language-server tree-sitter nodejs git wl-clipboard python-pynvim npm fzf go wget lazygit bash-completion man-db shellcheck shfmt hunspell-en_gb
 ```
 
 ## Backup Existing `nvim` Configurations
@@ -30,12 +30,10 @@ Following command is required:-
 mv ~/.config/nvim{,.bak}
 ```
 
-Following commands are optional but recommended:-
+Following command is optional but recommended:-
 
 ```bash
-mv ~/.local/share/nvim{,.bak}
-mv ~/.local/state/nvim{,.bak}
-mv ~/.cache/nvim{,.bak}
+mv ~/.local/share/nvim{,.bak} ~/.local/state/nvim{,.bak}  ~/.cache/nvim{,.bak}
 ```
 
 ### Clone Repo
@@ -56,4 +54,4 @@ Ensure that all plugins are installed and configured correctly using `:checkheal
 
 ## Important
 
-The configurations rely on pyright for auto-completion. If you find pyright delays in providing suggestion, then it is most likely that you have kept you python file in a place you have deep subdirectories i.e. home directory. To overcome this, you have to move your file in a directory having proper Python package directory structure.
+The configurations rely on `pyright` for auto-completion on Python files. If you find `pyright` delays in providing auto suggestions, then it is most likely that you have kept you Python file in a place having deep sub-directories i.e. home directory. To overcome this, you have to move your file in a directory having `proper` Python package directory structure.
