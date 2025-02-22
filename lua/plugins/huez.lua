@@ -7,6 +7,7 @@ return {
   -- import = "huez-manager.import"
   branch = "stable",
   event = "UIEnter",
+  fallback = "tokyonight",
   config = function()
     require("huez").setup({})
   end,

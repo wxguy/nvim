@@ -3,3 +3,6 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("n", "<F4>", ":w <bar> exec '!python '.shellescape('%')<CR>")
+
+-- Select themes using Huez
+vim.keymap.set("n", "<leader>tc", ":Huez <cr>", { desc = "Choose colour theme" })
